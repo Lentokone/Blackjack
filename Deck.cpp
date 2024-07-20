@@ -2,7 +2,7 @@
 #include <iostream>
 
 using namespace std;
-void deck::Deck::UURR()
+void Deck::UURR()
 {
 	cout << "Testailu" << endl;
 }

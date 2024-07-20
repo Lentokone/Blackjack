@@ -2,7 +2,7 @@
 #include <iostream>
 
 using namespace std;
-void card::Card::UURR()
+void Card::UURR()
 {
 	cout << "Testailu" << endl;
 }

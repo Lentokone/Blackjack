@@ -1,16 +1,15 @@
 #ifndef CARD_H
 #define CARD_H
 
-namespace card
+
+class Card
 {
-	class Card
-	{
-	private:
+private:
 
-	public:
-		void UURR();
+public:
+	void UURR();
 
-	};
-}
+};
+
 
 #endif // !CARd_H

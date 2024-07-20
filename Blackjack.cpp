@@ -6,12 +6,12 @@
 
 // ! perkele
 // Todo Luokat
-// ! Ajattelin card, deck, ehkä game, charachter, player, dealer
+// ! Ajattelin card, deck, ehkä game, character, player, dealer
 
 //
 #include <iostream>
 #include <stdio.h>
-#include "Character.h"
+#include "Player.h"
 
 using namespace std;
 
@@ -89,6 +89,7 @@ int main()
     Vector v2(1, 2, 3, 4);
     v2.tulostaVektori();
 
-    character::Character bob;
+    Player bob;
     bob.UURR();
+    bob.kortit();
 }
