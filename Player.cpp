@@ -2,12 +2,17 @@
 #include <iostream>
 
 using namespace std;
-void Player::UURR()
+
+void Player::addCard(const Card& card)
 {
-	cout << "UU. RR?" << endl;
+	hand.push_back(card);
 }
 
-void Player::kortit()
+void Player::showHand() const
 {
-	cout << hand[0] << endl;
+	for (const auto& card : hand) {
+		std::cout << card.getCard() << std::endl;
+	}
 }
+// Todo Tänne funktio checkPoints tai vastaava
+// Todo siellä on input check jos löytyy ace hand vectorista

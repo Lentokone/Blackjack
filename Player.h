@@ -10,11 +10,12 @@ private:
 
 	//Tai käsi luokka jossa ne hommat
 	std::vector<Card> hand;
-	Card bob;
-	hand = { bob };
+
 public:
-	void UURR();
-	void kortit();
+	void addCard(const Card& card);
+	void showHand() const;
+	
+
 };
 
 

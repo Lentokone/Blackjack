@@ -11,7 +11,9 @@
 //
 #include <iostream>
 #include <stdio.h>
+#include <string>
 #include "Player.h"
+#include "Card.h"
 
 using namespace std;
 
@@ -90,6 +92,34 @@ int main()
     v2.tulostaVektori();
 
     Player bob;
-    bob.UURR();
-    bob.kortit();
+
+    bob.addCard(Card(Card::Hearts, Card::Four));
+    bob.showHand();
+
+    string answ1, answ2;
+    
+    cin >> answ1;
+    cin >> answ2;
+    cout << Card::Diamonds << endl;;
+    Card::Suit pepega;
+    Card::Rank ddaw = Card::Ace;
+
+    if (stoi(answ1) == Card::Diamonds)
+    { 
+        pepega = Card::Diamonds; 
+    }
+    else { pepega = Card::Clubs; }
+    bob.addCard(Card(pepega, ddaw));
+    bob.showHand();
+
+    int suitInput, rankInput;
+    cin >> suitInput;
+    cin >> rankInput;
+    Card::Suit suit = static_cast<Card::Suit>(suitInput);
+    Card::Rank rank = static_cast<Card::Rank>(rankInput);
+
+    // Create Card object
+    Card card(suit, rank);
+    cout << card.getSuit() + " " + card.getRank() << endl;
+
 }
