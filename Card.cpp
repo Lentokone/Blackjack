@@ -35,6 +35,23 @@ std::string Card::getRank() const
     }
 }
 
+int Card::getRankValue() const
+{
+    switch (rank)
+    {
+    case Card::Jack:
+    case Card::Queen:
+    case Card::King:
+        return 10;
+        break;
+    case Card::Ace:
+        return 11;
+        break;
+    default:
+        return static_cast<int>(rank);
+    }
+}
+
 std::string Card::getCard() const
 {
     return Card::getRank() + " of " + Card::getSuit();

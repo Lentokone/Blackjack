@@ -8,14 +8,18 @@ class Player
 private:
 	//Parempi olisi olla vain lista jonne laittaa noita kortteja
 
-	//Tai käsi luokka jossa ne hommat
+	//The player's cards in hand
 	std::vector<Card> hand;
 
 public:
+	//Function that adds a card to players hand
 	void addCard(const Card& card);
+
+	//Function to show how many cards player has and what they are
 	void showHand() const;
 	
-
+	//Function to get the point value of players hand
+	int getHandValue() const;
 };
 
 

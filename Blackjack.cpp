@@ -9,109 +9,51 @@
 // ! Ajattelin card, deck, ehkä game, character, player, dealer
 
 //
+
+// ! Hello helbert.
+// ? Ace on 11, mutta jos hand value yli 21 niin ace on 1
+
+
+//Todo Poista nuo kommentit, ne ovat vanhat t. Olli 22/07/ 1:17
+
 #include <iostream>
 #include <stdio.h>
 #include <string>
+
 #include "Player.h"
+#include "Dealer.h"
 #include "Card.h"
+
+#include <vector>
 
 using namespace std;
 
-class Vector
-{
-private:
-    double x0;
-    double y0;
-    double x1;
-    double y1;
-
-public:
-    
-    Vector()
-    {
-        alustaVektori();
-    }
-    
-    Vector(double x0, double y0, double x1, double y1)
-    {
-        this->x0 = x0;
-        this->x1 = x1;
-        this->y0 = y0;
-        this->y1 = y1;
-    }
-
-    Vector(Vector& v)
-    {
-        this->x0 = v.x0;
-        this->y0 = v.y0;
-        this->x1 = v.x1;
-        this->y1 = v.y1;
-    }
-
-    void tulosta()
-    {
-        cout << "Testaus" << endl;
-    }
-
-    void tulostaVektori()
-    {
-        cout << "start:" << x0 << "," << y0 << " end:" << x1 << "," << y1 << endl;
-    }
-
-    void alustaVektori()
-    {
-        x0 = 0;
-        y0 = 0;
-        x1 = 0;
-        y1 = 0;
-    }
-
-    void aseta(double x0, double y0, double x1, double y1)
-    {
-        this->x0 = x0;
-        this->x1 = x1;
-        this->y0 = y0;
-        this->y1 = y1;
-    }
-};
 
 int main()
 {
-    Vector v1;
-
-
-    v1.tulosta();
-
-    v1.alustaVektori();
-    v1.tulostaVektori();
-
-    v1.aseta(2, 5, 1, 5);
-    v1.tulostaVektori();
-
-    Vector v2(1, 2, 3, 4);
-    v2.tulostaVektori();
-
     Player bob;
+    Card kortt(Card::Clubs, Card::Five);
 
     bob.addCard(Card(Card::Hearts, Card::Four));
+    bob.addCard(Card(Card::Diamonds, Card::Three));
+    bob.addCard(Card(Card::Clubs, Card::Three));
+    bob.addCard(Card(Card::Spades, Card::Ace));
+
+    bob.addCard(kortt);
     bob.showHand();
 
-    string answ1, answ2;
     
-    cin >> answ1;
-    cin >> answ2;
-    cout << Card::Diamonds << endl;;
-    Card::Suit pepega;
-    Card::Rank ddaw = Card::Ace;
+    vector<Card> apina;
+    Card monkey(Card::Clubs, Card::Three);
+    apina.push_back(monkey);
 
-    if (stoi(answ1) == Card::Diamonds)
-    { 
-        pepega = Card::Diamonds; 
+    for (const auto& card : apina) {
+        std::cout << card.getCard() << std::endl;
     }
-    else { pepega = Card::Clubs; }
-    bob.addCard(Card(pepega, ddaw));
-    bob.showHand();
-
+    cout << "Teesmaili" << endl;
+    Card& kakka = apina.at(0);
+    apina.erase(apina.begin());
+    cout << kakka.getCard() << endl;
     int suitInput, rankInput;
     cin >> suitInput;
     cin >> rankInput;
@@ -120,6 +62,51 @@ int main()
 
     // Create Card object
     Card card(suit, rank);
-    cout << card.getSuit() + " " + card.getRank() << endl;
+    cout << card.getRank() + " of " + card.getSuit() << endl;
+    Deck test;
+    Dealer jakaja(test);
+    jakaja.showHand();
+    Card gege(Card::Clubs, Card::Ace);
+    cout << gege.getRank() << endl;
 
+    
+    cout << bob.getHandValue() << endl;
+    Deck uuRR;
+    uuRR.showDeck();
+    Dealer kalle(uuRR);
+    kalle.addCard(Card(Card::Spades, Card::Ace));
+    kalle.showHand();
+    Player paavo;
+    kalle.dealCard(paavo, uuRR);
+    kalle.dealCard(paavo, uuRR);
+    kalle.dealCard(paavo, uuRR);
+    paavo.showHand();
+    uuRR.showDeck();
+    kalle.dealCard(kalle, uuRR);
+    kalle.showHand();
+    
+    cout << endl;
+    cout << "Apina testaus" << endl;
+    uuRR.showDeck();
+    cout << "Apina testaus" << endl;
+    uuRR.shuffleDeck();
+    cout << "Apina testaus" << endl;
+    uuRR.showDeck();
+    cout << "Apina testaus" << endl;
+    uuRR.resetDeck();
+    uuRR.showDeck();
+    cout << "Apina testaus" << endl;
+    while (uuRR.deckSize() > 0)
+    {
+        kalle.dealCard(kalle, uuRR);
+    }
+    cout << endl;
+    cout << "Kallen käsi" << endl;
+    cout << endl;
+    kalle.showHand();
+    cout << endl;
+    cout << endl;
+    uuRR.showDeck();
+    kalle.dealCard(kalle, uuRR);
+    uuRR.showDeck();
 }
