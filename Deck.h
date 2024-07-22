@@ -6,6 +6,7 @@
 class Deck
 {
 private:
+	//Vector for all the cards in a deck
 	std::vector<Card> deck_cards;
 public:
 	Deck();
@@ -25,7 +26,4 @@ public:
 	//Writes deck size into console
 	int deckSize();
 };
-//Reset deck
-//shuffle deck
-
 #endif // !DECK_H

@@ -13,6 +13,7 @@ Deck::Deck()
 		}
 	}
 }
+
 Card Deck::dealCard()
 {
 	//Tämä jakaa kortin jollekkin

@@ -7,14 +7,15 @@ class Dealer :
     public Player
 {
 private:
-    Deck& deck;
+    Deck* deck;
 
 public:
-    Dealer(Deck& d) : deck(d) {}
+    Dealer();
 
-    void dealCard(Player& player, Deck& deck);    //Tälle annetaan tai saa player ja dealer classin hand vectorin, deck classin current cards ja antaa sieltä yhden kortin pelaajalle ja jakajalle
+    Dealer(Deck& d) : deck(&d) {}
+
+    //Deals a card to a given player from a given deck
+    void dealCard(Player& player, Deck& deck);
 };
 
-//! Dealer hand value alle 17 niin ottaa kortin
 #endif // !DEALER_H
-

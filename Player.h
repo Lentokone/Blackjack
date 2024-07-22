@@ -6,20 +6,29 @@
 class Player
 {
 private:
-	//Parempi olisi olla vain lista jonne laittaa noita kortteja
-
 	//The player's cards in hand
 	std::vector<Card> hand;
-
 public:
 	//Function that adds a card to players hand
 	void addCard(const Card& card);
 
+	//Shows what suite and rank a card is at that index
+	std::string showCardAtIndex(int index);
+
+	//Returns a card object at that index
+	Card getCardAtIndex(int index);
+
 	//Function to show how many cards player has and what they are
 	void showHand() const;
 	
+	//Returns the size of the hand - 1
+	int getHandSize();
+
 	//Function to get the point value of players hand
 	int getHandValue() const;
+
+	//Clears the hand
+	void clearHand();
 };
 
 
