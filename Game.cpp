@@ -1,6 +1,10 @@
-#include <iostream>
 #include "Game.h"
+#include <iostream>
 #include <string>
+#include <fstream>
+#include "json.hpp"
+
+using json = nlohmann::json;
 
 Game::Game() : deck(), dealer(deck), gameState(false), playerTurn(true)
 {
@@ -9,6 +13,8 @@ Game::Game() : deck(), dealer(deck), gameState(false), playerTurn(true)
 
 void Game::initializeGame()
 {
+	clearConsole();
+
 	gameState = true;
 	deck.resetDeck();
 	deck.shuffleDeck();
@@ -37,37 +43,61 @@ void Game::initializeGame()
 
 void Game::gameMenu()
 {
+	//Todo Tänne se history reading
 	bool menuState = true;
-	std::string userInput = "";
+	char userInput;
+	int uInputConverted;
 
+	loadGameHistory("game_history.json");
 	while (menuState)
 	{
+		//clearConsole();
+
 		std::cout << "Main menu" << std::endl;
 		std::cout << "---------" << std::endl;
 		std::cout << "[1] Play game\n[2] Look at previous games\n[q] Quit" << std::endl;
 		std::cin >> userInput;
-		if (userInput == "q")
+		if (userInput == 'q')
 		{
 			menuState = false;
+			saveGameHistory("game_history.json");
 		}
 		else
 		{
-			int intInput = stoi(userInput);
-			switch (intInput)
+			//If the userInput is a digit, then it converts it to an int
+			if (isdigit(userInput))
+			{
+				uInputConverted = userInput - '0';
+			}
+			//Else it will default to a 0
+			else { uInputConverted = 0; }
+
+			switch (uInputConverted)
 			{
 			case 1:
-				//if (gameState == false) { gameState = true; }
 				initializeGame();
 				gameFlow();
 				break;
-			case 2:	//Tästä ehkä mieluummin seuraava menu jossa voi valita show history, clear history, back
-				std::cout << std::endl;
+			case 2:	//This is a menu for showing the match history and to clear it.
+				clearConsole();
+				std::cout << "Game history" << std::endl;
 				std::cout << "[1] Show history\n[2] Clear history\n[3] Go back" << std::endl;
 				std::cin >> userInput;
-				switch (stoi(userInput))
+
+				//If the userInput is a digit, then it converts it to an int
+				if (isdigit(userInput))
+				{
+					uInputConverted = userInput - '0';
+				}
+				//Else it will default to a 0
+				else { uInputConverted = 0; }
+
+				switch (uInputConverted)
 				{
 				case 1:
+					clearConsole();
 					showGameHistory();
+					std::cout << std::endl;
 					break;
 				case 2:
 					gameHistory.clear();
@@ -84,6 +114,7 @@ void Game::gameMenu()
 				std::cout << "This only accepts 1, 2 and q as input" << std::endl;
 				break;
 			}
+			
 		}
 	}
 }
@@ -109,6 +140,7 @@ void Game::gameFlow()
 				if (input == "q")
 				{
 					gameState = false;
+					saveGameHistory("game_history.json");
 				}
 				else if (input == "1")
 				{
@@ -241,4 +273,40 @@ void Game::showGameHistory()
 			<< " | Player points: " << result.playerPoints
 			<< " | Dealer points: " << result.dealerPoints << std::endl;
 	}
+}
+
+void Game::saveGameHistory(const std::string& filename) {
+	json j = gameHistory; // Converts gameHistory vector to JSON
+	std::ofstream file(filename);
+	if (file.is_open()) {
+		file << j.dump(4); // Saves JSON to a file with 4-space indentation
+		file.close();
+		std::cout << "Game history saved to " << filename << std::endl;
+	}
+	else {
+		std::cerr << "Unable to open file for writing" << std::endl;
+	}
+}
+
+void Game::loadGameHistory(const std::string& filename) {
+	json j;
+	std::ifstream file(filename);
+	if (file.is_open()) {
+		file >> j; // Reads JSON from a file
+		file.close();
+		gameHistory = j.get<std::vector<GameResult>>(); // Converts JSON to a gameHistory vector
+		std::cout << "Game history loaded from " << filename << std::endl;
+	}
+	else {
+		std::cerr << "Unable to open file for reading" << std::endl;
+	}
+}
+
+void Game::clearConsole()
+{
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif
 }

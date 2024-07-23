@@ -5,12 +5,17 @@
 #include "Deck.h"
 #include "Dealer.h"
 #include "Player.h"
+#include "json.hpp"
+
+using json = nlohmann::json;
 
 struct GameResult
 {
 	std::string outcome;
 	int playerPoints = 0;
 	int dealerPoints = 0;
+
+	NLOHMANN_DEFINE_TYPE_INTRUSIVE(GameResult, outcome, playerPoints, dealerPoints)
 };
 
 class Game
@@ -44,6 +49,12 @@ public:
 
 	//Tells total games played, game outcomes and how much points did the dealer and player have.
 	void showGameHistory();
+
+	void saveGameHistory(const std::string& filename);
+
+	void loadGameHistory(const std::string& filename);
+
+	void clearConsole();
 };
 
 
