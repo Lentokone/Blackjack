@@ -34,26 +34,28 @@ public:
 	//Initializes the game, makes a deck, dealer and player object.
 	void initializeGame();
 	
-	//Is the menu for the game
+	//Is the menu for the game.
 	void gameMenu();
 
-	//Is the flow of the game
+	//Is the flow of the game.
 	void gameFlow();
 
-	//Shows the score of the game
+	//Shows the score of the game.
 	void showScore();
 
 	//Checks the dealer's and player's score.
-	//! Parempi sanoitus tohon kommenttiin
 	void checkGameScore();
 
 	//Tells total games played, game outcomes and how much points did the dealer and player have.
 	void showGameHistory();
 
+	//Saves the game history to "game_history.json".
 	void saveGameHistory(const std::string& filename);
 
+	//Loads the game history from "game_history.json".
 	void loadGameHistory(const std::string& filename);
 
+	//Clears the console.
 	void clearConsole();
 };
 

@@ -1,1 +1,7 @@
-[]
+[
+    {
+        "dealerPoints": 26,
+        "outcome": "Player wins, dealer has bust.",
+        "playerPoints": 20
+    }
+]

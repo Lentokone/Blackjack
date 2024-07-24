@@ -3,7 +3,8 @@
 
 using namespace std;
 
-
+// Returns the suit  in a string.
+// This function uses the card suit enum values and returns them in string.
 std::string Card::getSuit() const
 {
     switch (suit) {
@@ -15,6 +16,8 @@ std::string Card::getSuit() const
     }
 }
 
+// Returns the rank in a string.
+// This function uses the card rank enum values and returns them in string.
 std::string Card::getRank() const
 {
     switch (rank) {
@@ -35,6 +38,7 @@ std::string Card::getRank() const
     }
 }
 
+// Returns the value of the card's rank in blackjack.
 int Card::getRankValue() const
 {
     switch (rank)
@@ -52,6 +56,7 @@ int Card::getRankValue() const
     }
 }
 
+// Returns the rank and suit of the card in a string.
 std::string Card::getCard() const
 {
     return Card::getRank() + " of " + Card::getSuit();

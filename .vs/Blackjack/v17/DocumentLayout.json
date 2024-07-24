@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Card.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Card.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Blackjack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Blackjack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Dealer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Dealer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Card.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Card.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Dealer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,24 +31,20 @@
       "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Deck.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Card.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Card.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Card.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Card.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Dealer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Dealer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Deck.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Deck.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Blackjack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E9FC166-9779-4621-8206-B464439859EB}|Blackjack.vcxproj|solutionrelative:Blackjack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,7 +53,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 687,
+          "DockedWidth": 609,
           "SelectedChildIndex": 7,
           "Children": [
             {
@@ -86,13 +86,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Blackjack.cpp",
               "DocumentMoniker": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Blackjack.cpp",
               "RelativeDocumentMoniker": "Blackjack.cpp",
               "ToolTip": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Blackjack.cpp",
               "RelativeToolTip": "Blackjack.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-19T17:05:47.587Z",
               "EditorCaption": ""
@@ -100,127 +100,135 @@
           ]
         },
         {
-          "DockedWidth": 1707,
-          "SelectedChildIndex": 8,
+          "DockedWidth": 1785,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Dealer.cpp",
               "DocumentMoniker": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Dealer.cpp",
               "RelativeDocumentMoniker": "Dealer.cpp",
               "ToolTip": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Dealer.cpp",
               "RelativeToolTip": "Dealer.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-21T15:19:04.922Z"
+              "WhenOpened": "2024-07-21T15:19:04.922Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Dealer.h",
               "DocumentMoniker": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Dealer.h",
               "RelativeDocumentMoniker": "Dealer.h",
               "ToolTip": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Dealer.h",
               "RelativeToolTip": "Dealer.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-21T15:14:00.919Z"
+              "WhenOpened": "2024-07-21T15:14:00.919Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Deck.cpp",
               "DocumentMoniker": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Deck.cpp",
               "RelativeDocumentMoniker": "Deck.cpp",
               "ToolTip": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Deck.cpp",
               "RelativeToolTip": "Deck.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAAAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAAFUAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-19T21:20:28.799Z"
+              "WhenOpened": "2024-07-19T21:20:28.799Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Deck.h",
               "DocumentMoniker": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Deck.h",
               "RelativeDocumentMoniker": "Deck.h",
               "ToolTip": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Deck.h",
               "RelativeToolTip": "Deck.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-19T21:20:20.797Z"
+              "WhenOpened": "2024-07-19T21:20:20.797Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "Card.cpp",
               "DocumentMoniker": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Card.cpp",
               "RelativeDocumentMoniker": "Card.cpp",
               "ToolTip": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Card.cpp",
               "RelativeToolTip": "Card.cpp",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAbAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAADgvzsAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-19T21:20:29.747Z"
+              "WhenOpened": "2024-07-19T21:20:29.747Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Card.h",
               "DocumentMoniker": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Card.h",
               "RelativeDocumentMoniker": "Card.h",
               "ToolTip": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Card.h",
               "RelativeToolTip": "Card.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-19T21:20:17.61Z"
+              "WhenOpened": "2024-07-19T21:20:17.61Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Player.cpp",
               "RelativeDocumentMoniker": "Player.cpp",
               "ToolTip": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Player.cpp",
               "RelativeToolTip": "Player.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAeAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADoAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-19T18:07:56.7Z"
+              "WhenOpened": "2024-07-19T18:07:56.7Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Player.h",
               "RelativeDocumentMoniker": "Player.h",
               "ToolTip": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Player.h",
               "RelativeToolTip": "Player.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-19T18:07:51.674Z"
+              "WhenOpened": "2024-07-19T18:07:51.674Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Game.cpp",
               "RelativeDocumentMoniker": "Game.cpp",
               "ToolTip": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Game.cpp",
               "RelativeToolTip": "Game.cpp",
-              "ViewState": "AQIAAOgAAAAAAAAAAAAwwBYBAAA5AAAA",
+              "ViewState": "AQIAAH8AAAAAAAAAAADgv8UAAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-22T08:45:50.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Game.h",
               "DocumentMoniker": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Game.h",
               "RelativeDocumentMoniker": "Game.h",
               "ToolTip": "C:\\Users\\Olli\\Desktop\\kesakoulu\\Blackjack\\Game.h",
               "RelativeToolTip": "Game.h",
-              "ViewState": "AQIAABkAAAAAAAAAAIAwwDgAAAASAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAIAwwC4AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-22T08:45:42.094Z",
               "EditorCaption": ""

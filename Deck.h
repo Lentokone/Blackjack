@@ -9,6 +9,7 @@ private:
 	//Vector for all the cards in a deck
 	std::vector<Card> deck_cards;
 public:
+	//Constructor for a deck object
 	Deck();
 
 	//Deals a card from the deck
@@ -19,10 +20,14 @@ public:
 
 	//Resets the deck
 	void resetDeck();
+	
+	/*
+	////This is for testing
 
-	//These are for testing
 	//Shows what cards are in the deck
 	void showDeck();
+	*/
+	
 	//Writes deck size into console
 	int deckSize();
 };

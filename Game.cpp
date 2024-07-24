@@ -135,7 +135,7 @@ void Game::gameFlow()
 			}
 			else
 			{
-				std::cout << "[1] hit.\n" << "[2] stand.\n" << "[3] show score.\n" << "[q] = quit. " << std::endl;
+				std::cout << "[1] hit.\n" << "[2] stand.\n" << "[3] show hand.\n" << "[q] = quit. " << std::endl;
 				std::cin >> input;
 				if (input == "q")
 				{
@@ -165,6 +165,7 @@ void Game::gameFlow()
 
 				else if (input == "3")
 				{
+					player.showHand();
 					showScore();
 					
 					std::cout << std::endl;
@@ -192,13 +193,17 @@ void Game::gameFlow()
 
 void Game::showScore()
 {
+	//Gets thee first card of the dealer
 	Card dealerFirstCard = dealer.getCardAtIndex(0);
 	std::cout << "Your hand value is " << player.getHandValue() << " Points" << std::endl;
 	std::cout << std::endl;
+
+	//If it is the player's turn, the dealer's second card is hidden
 	if (playerTurn)
 	{
 		std::cout << "The dealer's hand value is " << dealerFirstCard.getRankValue() << "\nAnd they have a hidden card" << std::endl;
 	}
+	//After the player's turn is over, the dealer then reveals his second card
 	else
 	{
 		std::cout << "The dealer's hand value is " << dealer.getHandValue() << std::endl;
