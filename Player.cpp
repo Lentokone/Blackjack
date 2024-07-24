@@ -35,9 +35,12 @@ void Player::showHand() const
 	}
 }
 
-int Player::getHandSize()
+// This is used outside of Player.cpp.
+// It is used to return the last index of hand vector.
+int Player::getHandLastIndex()
 {
-	return hand.size() - 1;
+	int handLastIndex = static_cast<int>(hand.size() - 1);
+	return handLastIndex;
 }
 
 int Player::getHandValue() const
@@ -61,7 +64,9 @@ int Player::getHandValue() const
 		}
 	}
 
+	// If the hand value goes over 21 and the player has an ace.
 	while (handValue > 21 && aceCount > 0) {
+		// Changes the hand's ace value from 11 to 1.
 		handValue -= 10;
 		aceCount--;
 	}
@@ -75,5 +80,3 @@ void Player::clearHand()
 	// Clears the hand vector.
 	hand.clear();
 }
-// Todo Tänne funktio checkPoints tai vastaava
-// Todo siellä on input check jos löytyy ace hand vectorista

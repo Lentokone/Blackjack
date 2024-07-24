@@ -6,11 +6,13 @@
 
 using json = nlohmann::json;
 
+// Constructor for Game class
 Game::Game() : deck(), dealer(deck), gameState(false), playerTurn(true)
 {
 	//initializeGame();
 }
 
+// Initializes the game state, shuffles the deck, and deals initial cards.
 void Game::initializeGame()
 {
 	clearConsole();
@@ -28,22 +30,21 @@ void Game::initializeGame()
 	std::cout << "The dealer starts dealing cards" << std::endl;
 	std::cout << "-------------------------------" << std::endl;
 	dealer.dealCard(player, deck);
-	std::cout << "\nYou get " << player.showCardAtIndex(player.getHandSize()) << std::endl;
+	std::cout << "\nYou get " << player.showCardAtIndex(player.getHandLastIndex()) << std::endl;
 
 	dealer.dealCard(player, deck);
-	std::cout << "\nYou get " << player.showCardAtIndex(player.getHandSize()) << std::endl;
+	std::cout << "\nYou get " << player.showCardAtIndex(player.getHandLastIndex()) << std::endl;
 	
 	dealer.dealCard(dealer, deck);
-	std::cout << "\nThe dealer gets " << dealer.showCardAtIndex(dealer.getHandSize()) << std::endl;
+	std::cout << "\nThe dealer gets " << dealer.showCardAtIndex(dealer.getHandLastIndex()) << std::endl;
 
 	dealer.dealCard(dealer, deck);
 	std::cout << "The dealer places their second card face down\n" << std::endl;
-	
 }
 
+// Displays the game menu and handles user input.
 void Game::gameMenu()
 {
-	//Todo Tänne se history reading
 	bool menuState = true;
 	char userInput;
 	int uInputConverted;
@@ -51,8 +52,6 @@ void Game::gameMenu()
 	loadGameHistory("game_history.json");
 	while (menuState)
 	{
-		//clearConsole();
-
 		std::cout << "Main menu" << std::endl;
 		std::cout << "---------" << std::endl;
 		std::cout << "[1] Play game\n[2] Look at previous games\n[q] Quit" << std::endl;
@@ -64,12 +63,12 @@ void Game::gameMenu()
 		}
 		else
 		{
-			//If the userInput is a digit, then it converts it to an int
+			// If the userInput is a digit, then it converts it to an int.
 			if (isdigit(userInput))
 			{
 				uInputConverted = userInput - '0';
 			}
-			//Else it will default to a 0
+			// Else it will default to a 0.
 			else { uInputConverted = 0; }
 
 			switch (uInputConverted)
@@ -78,18 +77,18 @@ void Game::gameMenu()
 				initializeGame();
 				gameFlow();
 				break;
-			case 2:	//This is a menu for showing the match history and to clear it.
+			case 2:	// This is a menu for showing the match history and to clear it.
 				clearConsole();
 				std::cout << "Game history" << std::endl;
 				std::cout << "[1] Show history\n[2] Clear history\n[3] Go back" << std::endl;
 				std::cin >> userInput;
 
-				//If the userInput is a digit, then it converts it to an int
+				// If the userInput is a digit, then it converts it to an int.
 				if (isdigit(userInput))
 				{
 					uInputConverted = userInput - '0';
 				}
-				//Else it will default to a 0
+				// Else it will default to a 0.
 				else { uInputConverted = 0; }
 
 				switch (uInputConverted)
@@ -119,6 +118,7 @@ void Game::gameMenu()
 	}
 }
 
+// Manages the main game flow, handling player's and dealer's turns.
 void Game::gameFlow()
 {
 	std::string input = "";
@@ -145,7 +145,7 @@ void Game::gameFlow()
 				else if (input == "1")
 				{
 					dealer.dealCard(player, deck);
-					std::cout << "You get " << player.showCardAtIndex(player.getHandSize()) << "\n" << std::endl;
+					std::cout << "You get " << player.showCardAtIndex(player.getHandLastIndex()) << "\n" << std::endl;
 					if (player.getHandValue() >= 21)
 					{
 						checkGameScore();
@@ -191,6 +191,7 @@ void Game::gameFlow()
 	}
 }
 
+// Displays the current scores for the player and dealer.
 void Game::showScore()
 {
 	//Gets thee first card of the dealer
@@ -210,10 +211,13 @@ void Game::showScore()
 	}
 }
 
+// Evaluates and displays the result of the game, then saves the result to the game history.
 void Game::checkGameScore()
 {
     GameResult matchResult;
+	// Gets the value of dealer's hand.
     int dealerScore = dealer.getHandValue();
+	// Gets the value of player's hand.
     int playerScore = player.getHandValue();
 
     if (playerScore <= 21)
@@ -264,6 +268,7 @@ void Game::checkGameScore()
     showScore();
 }
 
+// Displays the game history from previous sessions.
 void Game::showGameHistory()
 {
 	if (gameHistory.empty()) {
@@ -280,6 +285,7 @@ void Game::showGameHistory()
 	}
 }
 
+// Saves the game history to a file in JSON format.
 void Game::saveGameHistory(const std::string& filename) {
 	json j = gameHistory; // Converts gameHistory vector to JSON
 	std::ofstream file(filename);
@@ -293,6 +299,7 @@ void Game::saveGameHistory(const std::string& filename) {
 	}
 }
 
+// Loads the game history from a file in JSON format.
 void Game::loadGameHistory(const std::string& filename) {
 	json j;
 	std::ifstream file(filename);
@@ -307,6 +314,7 @@ void Game::loadGameHistory(const std::string& filename) {
 	}
 }
 
+// Clears the console, platform-specific.
 void Game::clearConsole()
 {
 #ifdef _WIN32

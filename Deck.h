@@ -6,19 +6,19 @@
 class Deck
 {
 private:
-	//Vector for all the cards in a deck
+	// Vector for all the cards in a deck.
 	std::vector<Card> deck_cards;
 public:
-	//Constructor for a deck object
+	// Constructor for a deck object.
 	Deck();
 
-	//Deals a card from the deck
+	// Deals a card from the deck.
 	Card dealCard();
 	
-	//Shuffles the deck
+	// Shuffles the deck.
 	void shuffleDeck();
 
-	//Resets the deck
+	// Resets the deck.
 	void resetDeck();
 	
 	/*
@@ -28,7 +28,7 @@ public:
 	void showDeck();
 	*/
 	
-	//Writes deck size into console
+	// Returns size of deck.
 	int deckSize();
 };
 #endif // !DECK_H
