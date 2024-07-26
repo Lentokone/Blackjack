@@ -47,7 +47,13 @@ Tämä projekti on konsolipohjainen blackjack-peli, toteutettu C++-kielellä. Pe
 
 -build.bat
 
-3. (Jos ei onnistu rakentaminen, niin siellä on valmiiksi tehty Blackjack_final.exe)
+4. Suorita blackjack.exe
+
+-Joko avaamalla blackjack.exe
+
+-Tai konsolissa kirjoittaa "blackjack.exe"
+
+5. (Jos ei onnistu rakentaminen, niin siellä on valmiiksi tehty Blackjack_final.exe)
 
 -Blackjack_final.exe
 
