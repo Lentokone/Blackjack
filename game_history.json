@@ -118,5 +118,10 @@
         "dealerPoints": 15,
         "outcome": "Dealer wins, player has bust.",
         "playerPoints": 22
+    },
+    {
+        "dealerPoints": 20,
+        "outcome": "Dealer wins, by having more points",
+        "playerPoints": 11
     }
 ]

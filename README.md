@@ -36,8 +36,8 @@ Rakenna projekti
 Tai suorita build.bat
 -build.bat
 
-(Jos ei onnistu rakentaminen, niin siellä on valmiiksi tehty Blackjack.exe)
--Blackjack.exe
+(Jos ei onnistu rakentaminen, niin siellä on valmiiksi tehty Blackjack_final.exe)
+-Blackjack_final.exe
 
 
 
