@@ -73,5 +73,50 @@
         "dealerPoints": 19,
         "outcome": "Stalemate, player and dealer have the same amount of points",
         "playerPoints": 19
+    },
+    {
+        "dealerPoints": 12,
+        "outcome": "Dealer wins, player has bust.",
+        "playerPoints": 27
+    },
+    {
+        "dealerPoints": 14,
+        "outcome": "Dealer wins, player has bust.",
+        "playerPoints": 22
+    },
+    {
+        "dealerPoints": 12,
+        "outcome": "Player wins with a blackjack",
+        "playerPoints": 21
+    },
+    {
+        "dealerPoints": 23,
+        "outcome": "Player wins, dealer has bust.",
+        "playerPoints": 14
+    },
+    {
+        "dealerPoints": 20,
+        "outcome": "Dealer wins, by having more points",
+        "playerPoints": 19
+    },
+    {
+        "dealerPoints": 20,
+        "outcome": "Dealer wins, by having more points",
+        "playerPoints": 17
+    },
+    {
+        "dealerPoints": 20,
+        "outcome": "Dealer wins, by having more points",
+        "playerPoints": 19
+    },
+    {
+        "dealerPoints": 26,
+        "outcome": "Player wins, dealer has bust.",
+        "playerPoints": 12
+    },
+    {
+        "dealerPoints": 15,
+        "outcome": "Dealer wins, player has bust.",
+        "playerPoints": 22
     }
 ]

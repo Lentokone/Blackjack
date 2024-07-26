@@ -40,6 +40,7 @@ void Game::initializeGame()
 
 	dealer.dealCard(dealer, deck);
 	std::cout << "The dealer places their second card face down\n" << std::endl;
+	playerTurn = true;
 }
 
 // Displays the game menu and handles user input.
@@ -126,16 +127,17 @@ void Game::gameFlow()
 
 	while (gameState)
 	{
-		if (currentGameState == 1)
+		if (currentGameState == true)
 		{
 			if (player.getHandValue() >= 21)
 			{
 				checkGameScore();
+				playerTurn = false;
 				currentGameState = false;
 			}
 			else
 			{
-				std::cout << "[1] hit.\n" << "[2] stand.\n" << "[3] show hand.\n" << "[q] = quit. " << std::endl;
+				std::cout << "[1] hit.\n" << "[2] stand.\n" << "[3] show hand.\n" << "[q] Quit. " << std::endl;
 				std::cin >> input;
 				if (input == "q")
 				{
@@ -148,6 +150,7 @@ void Game::gameFlow()
 					std::cout << "You get " << player.showCardAtIndex(player.getHandLastIndex()) << "\n" << std::endl;
 					if (player.getHandValue() >= 21)
 					{
+						playerTurn = false;
 						checkGameScore();
 						currentGameState = false;
 					}
@@ -174,7 +177,8 @@ void Game::gameFlow()
 		}
 		else 
 		{
-			std::cout << "Do you want to play again(1) or quit?(2)" << std::endl;
+			std::cout << "---------" << std::endl;
+			std::cout << "Game over\n---------\nDo you want to:\n[1] Play again\n[2] Quit" << std::endl;
 			std::cin >> input;
 
 			if (input == "1")
@@ -264,7 +268,6 @@ void Game::checkGameScore()
 
     // Save the game result
     gameHistory.push_back(matchResult);
-    
     showScore();
 }
 
