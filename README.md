@@ -32,30 +32,43 @@ Tämä projekti on konsolipohjainen blackjack-peli, toteutettu C++-kielellä. Pe
 
 ### Ohjeet:
 1. Kloonaa repositorio:
+    ```sh
+    git clone https://github.com/Lentokone/Blackjack.git
+    ```
 
--git clone https://github.com/Lentokone/Blackjack.git
+2. Siirry projektikansioon:
+    ```sh
+    cd Blackjack
+    ```
 
-2. Siirry projektikansioon.
+3. Rakenna projekti käyttämällä g++:
+    ```sh
+    g++ -std=c++17 -Isrc -Ilib src/*.cpp -o build/Blackjack.exe
+    ```
 
--cd Blackjack
+3. Tai käytä CMake:
+    ```sh
+    mkdir -p build/output
+    cd build/output
+    cmake ../..
+    cmake --build .
+    ```
 
-3. Rakenna projekti
+3. Tai suorita `build.bat`, joka rakentaa ohjelman:
+    ```sh
+    build.bat
+    ```
 
--g++ -std=c++11 -o Blackjack Blackjack.cpp Deck.cpp Card.cpp Game.cpp Player.cpp Dealer.cpp
+4. Suorita `Blackjack.exe`:
+    - Joko siirtymällä `build/output/` kansioon ja avaamalla `Blackjack.exe`
+    - Tai konsolissa kirjoittamalla:
+      ```sh
+      cd build/output && Blackjack.exe
+      ```
 
-3. Tai suorita build.bat
+5. (Jos ei onnistu rakentaminen, niin build kansiossa on valmiiksi rakennettu `Blackjack_final.exe`)
 
--build.bat
-
-4. Suorita blackjack.exe
-
--Joko avaamalla blackjack.exe
-
--Tai konsolissa kirjoittaa "blackjack.exe"
-
-5. (Jos ei onnistu rakentaminen, niin siellä on valmiiksi tehty Blackjack_final.exe)
-
--Blackjack_final.exe
+##
 
 ## Käyttö
 ### Pelin käynnistäminen
@@ -101,7 +114,7 @@ Kun projekti on rakennettu, suorita suoritettava tiedosto:
 -Jakajan täytyy ottaa kortteja, kunnes hänen kätensä arvo on vähintään 17.
 
 ## Tunnetut ongelmat
--Varmista, että json.hpp-tiedosto on projektihakemistossa JSON-operaatioita varten.
+-Varmista, että json.hpp-tiedosto on lib kansiossa JSON-operaatioita varten.
 
 -Peli saattaa kaatua, jos annetaan virheellisiä syötteitä. Käsittele syötteet huolellisesti.
 
