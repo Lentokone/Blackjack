@@ -15,5 +15,11 @@ add_executable(Blackjack ${SOURCES})
 # Include directories
 target_include_directories(Blackjack PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src ${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
-# Set output directory
+# Set runtime output directory
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/build/CMake_output)
+
+# If you are using multiple configurations (e.g., Debug, Release), you might need to specify the configuration-dependent output directories as well:
+foreach(CONFIG ${CMAKE_CONFIGURATION_TYPES})
+    string(TOUPPER ${CONFIG} CONFIG)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_${CONFIG} ${CMAKE_CURRENT_SOURCE_DIR}/build/CMake_output)
+endforeach()

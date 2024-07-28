@@ -28,7 +28,7 @@ Tämä projekti on konsolipohjainen blackjack-peli, toteutettu C++-kielellä. Pe
 ## Asennus
 
 ### Vaatimukset:
--C++ kääntäjä, joka tukee C++11 tai uudempaa(esimerkiksi g++, Visual Studio)
+-C++ kääntäjä, joka tukee C++17 tai uudempaa(esimerkiksi g++, Visual Studio)
 
 ### Ohjeet:
 1. Kloonaa repositorio:
@@ -48,10 +48,11 @@ Tämä projekti on konsolipohjainen blackjack-peli, toteutettu C++-kielellä. Pe
 
 3. Tai käytä CMake:
     ```sh
-    mkdir -p build/output
-    cd build/output
+    mkdir -p build/CMake_output
+    cd build/CMake_output
     cmake ../..
     cmake --build .
+
     ```
 
 3. Tai suorita `build.bat`, joka rakentaa ohjelman:
@@ -60,13 +61,17 @@ Tämä projekti on konsolipohjainen blackjack-peli, toteutettu C++-kielellä. Pe
     ```
 
 4. Suorita `Blackjack.exe`:
-    - Joko siirtymällä `build/output/` kansioon ja avaamalla `Blackjack.exe`
+    - Joko siirtymällä `build/output/` tai `build/CMake_output` kansioon ja avaamalla `Blackjack.exe`
     - Tai konsolissa kirjoittamalla:
       ```sh
       cd build/output && Blackjack.exe
       ```
+    - Tai
+      ```sh
+      cd build/CMake_output && Blackjack.exe
+      ```
 
-5. (Jos ei onnistu rakentaminen, niin build kansiossa on valmiiksi rakennettu `Blackjack_final.exe`)
+6. (Jos ei onnistu rakentaminen, niin build kansiossa on valmiiksi rakennettu `Blackjack_final.exe`)
 
 ##
 
