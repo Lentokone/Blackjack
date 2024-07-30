@@ -110,5 +110,7 @@ Kun projekti on rakennettu, suorita suoritettava tiedosto:
 
 -Peli saattaa kaatua, jos annetaan virheellisiä syötteitä. Käsittele syötteet huolellisesti.
 
+-Jos pelin avaa Visual studion kautta, se ei voi lukea tai tallentaa pelihistoriaa.
+
 ## Tekijä
 -Lentokone

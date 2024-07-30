@@ -132,8 +132,8 @@ void Game::gameFlow()
 		{
 			if (player.getHandValue() >= 21)
 			{
-				checkGameScore();
 				playerTurn = false;
+				checkGameScore();
 				currentGameState = false;
 			}
 			else
