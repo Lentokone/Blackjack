@@ -12,7 +12,6 @@
   - [Komennot](#komennot)
 - [Peliohjeet](#peliohjeet)
 - [Tunnetut ongelmat](#tunnetut-ongelmat)
-- [Tekijä](#tekijä)
 ## Johdanto
 
 Tämä projekti on konsolipohjainen blackjack-peli, toteutettu C++-kielellä. Pelissä pelaaja pelaa Blackjack jakajaa vastaan perinteisten sääntöjen mukaisesti.
